@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+  font-family: 'Pretendard-Regular';
+}
+
+.App {
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body{
+  background-image: url(../public/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.wrap{
+  width: 380px;
+  margin: 220px auto;
+  /* border: 1px solid white; */
+  border-radius: 200px 200px 0 0 ;
+  padding-bottom: 50px;
+  border-bottom: none;
+  /* background-color: beige; */
+}
+
+.listwrap{
+  margin-top: 50px;
+  margin-left: -15px;
+}
+
+h1{
+  width: 500px;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  margin-top: 100px;
+  margin-left: -55px;
+  font-size: 70px;
+  /* color: #0064CD; */
+  /* border: 1px solid black; */
+  text-shadow: -1px 0 #96C7ED, 0 1px #96C7ED, 1px 0 #96C7ED, 0 -1px #96C7ED;
+  mix-blend-mode: screen;
+}
+
+input[type="text"]{
+  border: none;
+  width: 250px;
+  height: 25px;
+  border-radius: 15px;
+  outline-color: #0064CD;
+  font-size: 18px;
+  color: #0064CD;
+  padding: 2px 15px;
+}
+
+button{
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button:hover{
+  font-weight: 900;
+  background-color: #96C7ED;
+  transition: all 0.5s;
+}
+
+.todoBtn{
+  background-color: transparent;
+  border: 1px solid #0064CD;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 3px 10px;
+  margin: 10px;
+  color: #0064CD;
+}
+
+.addBtn{
+  width: 30px;
+  height: 30px;
+  border: none;
+  /* padding: 0 5px; */
+  border-radius: 20px;
+  font-size: 25px;
+  color: #3C5A91;
+  position: absolute;
+}
+
+.addBtn span{
+  position: absolute;
+  top: -2px;
+  left: 7px;
+}
+
+
+
+ul,li{
+  text-decoration: none;
+  list-style: none;
+  color: #3C5A91;
+  font-size: 18px;
+}
+
+.todoDate{
+  width: 250px;
+  height: 25px;
+  margin-left: -10px;
+  border-bottom: 1px solid #3C5A91;
+}
+
+.todolist li{
+  width: 250px;
+  margin: 30px 0;
+  margin-left: 55px;
+}
+
+.checked{
+  text-decoration: line-through;
+  color: #739BE1;
+}
+
+input[type="checkbox"]{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin-left: -20px;
+  border: 1px solid #3C5A91;
+  appearance: none;
+  border-radius: 8px;
+  position: absolute;
+}
+
+input[type="checkbox"]:checked{
+  accent-color: #96C7ED;
+  border: 1px solid #3C5A91;
+}
+
+input[type="checkbox"]:checked::after{
+  content : "V";
+  font-size: 10px;
+  margin-left: 3px;
+  color: #3C5A91;
+}
+
+
+
+.delBtn{
+  margin-left: 5px;
+  padding: 0 3px;
+  font-size: 12px;
+  border: 1px solid #3C5A91;
+  background-color: transparent;
+  color: #3C5A91;
+}
+
+.delBtn:hover{
+  background-color: #96C7ED;
+  transition: all 0.5s;
+}
